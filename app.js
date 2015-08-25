@@ -14,7 +14,7 @@ app.use(session({
   secret: 'qualquerCoisa',
   resave: false,
   saveUninitialized: true
-}))
+}));
 
 if (app.get('env') == 'development')
   mongoose.connect('mongodb://localhost/blood');
@@ -84,9 +84,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 var server = app.listen(3000, function() {
+  var port = process.env.port || 3000;
 
-  var host = server.address().address
-  var port = process.env.port || 3000
-
-  console.log('Example app listening at http://%s:%s', host, port)
-})
+  console.log('Rodando na porta %s', port);
+});
