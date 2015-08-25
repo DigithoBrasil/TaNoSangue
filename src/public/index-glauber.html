@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Tá No Sangue</title>
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
+	</head>
+	<body class="nl-blurred">
+
+		<header>
+			<span class="sprite logo-hz"></span>
+		</header>
+		<div class="container demo-1">
+			<div class="main clearfix">
+					<h2>Fale um pouco sobre você</h2>
+					Meu nome é
+					<input type="text" value="" placeholder="doador"/>,
+					tenho
+					<input type="tel" value="" placeholder="18"/> anos.
+					Meu sangue é
+					<select>
+						<option value="1" selected>Tipo A+</option>
+					 	<option value="2">Tipo A-</option>
+					 	<option value="3">Tipo B+</option>
+					 	<option value="4">Tipo B-</option>
+					 	<option value="5">Tipo O+</option>
+					 	<option value="6">Tipo O-</option>
+					 	<option value="7">Tipo AB+</option>
+					 	<option value="7">Tipo AB-</option>
+					</select> sou do sexo
+					<select>
+						<option value="1" selected>masculino</option>
+					 	<option value="2">feminino</option>
+					</select> e quero receber informações pelo<br />
+					<input type="email" value="" placeholder="e-mail"/>.
+					<br /><br />
+					<input type="checkbox" id="promiscuidade" class="teste">
+					<label for="promiscuidade" class="checklabel">Possuo alto nível de promiscuidade.</label>
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Estou pronto para doar</button>
+					</div>
+					<div class="nl-overlay"></div>
+			</div>
+		</div>
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+		<script src="js/comum.js"></script>
+	</body>
+</html>

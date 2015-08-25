@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Tá No Sangue</title>
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
+	</head>
+	<body class="nl-blurred">
+		<header>
+			<span class="sprite logo-hz"></span>
+		</header>
+
+		<div class="main clearfix">
+			<div class="dados-do-usuario">
+				<span class="foto">
+					<img src="images/foto.jpg"/>
+				</span>
+				<span>Glauber Laender</span>
+				<small>Tipo A+</small>
+			</div>
+
+			<ul class="doacoes">
+				<li>
+					<span class="sprite icon-drop"></span>
+					<big>1,5</big> 
+					<span>litros doados</span>
+				</li>
+				<li>
+					<span class="sprite icon-rank"></span>
+					<big>596</big> 
+					<span>no ranking</span>
+				</li>
+			</ul>
+
+			<div class="ultima-doacao">
+				<h2>Última doação</h2>
+				10 de outubro, 2014
+			</div>
+
+			<button class="nl-submit-branco" type="submit">Iniciar campanha</button>
+		</div>
+
+		<div class="nl-form">
+			<button class="nl-submit" type="submit">Cadastrar doação</button>
+		</div>
+
+
+	
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+		<script src="js/comum.js"></script>
+	</body>
+</html>

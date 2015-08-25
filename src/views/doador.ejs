@@ -1,0 +1,43 @@
+<% include head %>
+		<div class="container demo-1">
+			<div class="main clearfix">
+				<form id="nl-form" action="/Doador" class="nl-form" method="post">
+					<h2>Fale um pouco sobre você</h2>
+					Meu nome é
+					<input type="text" value="guilherme" name="nome" placeholder="doador"/>,
+					tenho
+					<input type="tel" value="22" placeholder="18"/> anos.
+					Meu sangue é
+					<select name="tipoSanguineo">
+						<option value="A+" selected>Tipo A+</option>
+					 	<option value="A-">Tipo A-</option>
+					 	<option value="B+">Tipo B+</option>
+					 	<option value="B-">Tipo B-</option>
+					 	<option value="O+">Tipo O+</option>
+					 	<option value="O-">Tipo O-</option>
+					 	<option value="AB+">Tipo AB+</option>
+						<option value="AB-">Tipo AB-</option>
+					</select> sou do sexo
+					<select name="sexo">
+						<option value="masculino" selected>masculino</option>
+					 	<option value="feminino">feminino</option>
+					</select>, minha senha é
+					<input type="password" name="senha" value="123", placeholder="minha senha"/>
+					 e quero receber informações pelo<br />
+					<input type="email" name="email" value="a@b.com" placeholder="e-mail"/>.
+					<br /><br />
+					<input type="checkbox" name="promiscuo" id="promiscuidade" class="teste" checked="checked">
+					<label for="promiscuidade" class="checklabel">Possuo alto nível de promiscuidade.</label>
+
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Estou pronto para doar</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div>
+		<script src="/js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+<% include footer %>

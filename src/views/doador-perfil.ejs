@@ -1,0 +1,33 @@
+<% include head %>
+		<div class="main clearfix">
+		<div class="dados-do-usuario">
+			<span class="foto">
+				<img src="/images/desiree.jpg"/>
+			</span>
+			<span><%= doador.nome %></span>
+			<small>Tipo <%= doador.tipoSanguineo %></small>
+		</div>
+
+		<ul class="doacoes">
+			<li>
+				<span class="sprite icon-drop"></span>
+				<big><%= litrosDoados %></big>
+				<span>litros doados</span>
+			</li>
+			<li>
+				<span class="sprite icon-rank"></span>
+				<big><%= posicaoNoRanking %>º</big>
+				<span>no ranking</span>
+			</li>
+		</ul>
+
+		<div class="ultima-doacao">
+			<h2>Última doação</h2>
+			<%= ultimaDoacao %>
+		</div>
+	</div>
+
+	<div class="nl-form">
+		<button onclick="window.location.href = '/Doacoes/';" class="nl-submit" type="button">Cadastrar doação</button>
+	</div>
+<% include footer %>

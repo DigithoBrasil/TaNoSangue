@@ -1,0 +1,19 @@
+<% include head %>
+  <script>
+   function logar(){
+      var form = document.getElementById("login");
+      form.submit();
+   }
+  </script>
+  <div class="main clearfix">
+      <span class="sprite logo"></span>
+      <div class="nl-form">
+        <button onclick="logar();" class="nl-submit" type="submit">Login</button>
+      </div>
+      <form id="login" action="/" method="post">
+        <input name="email" type="text" placeholder="email" required />
+        <input name="senha" type="password" placeholder="Senha" required/>
+        <a class="link" href="/Doador">Sou novo por aqui</a>
+      </form>
+  </div>
+<% include footer %>

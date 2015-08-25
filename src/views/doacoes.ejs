@@ -1,0 +1,32 @@
+<% include head %>
+    <script>
+     function logar(){
+        var form = document.getElementById("login");  
+        form.submit();
+     }
+    </script>
+    <div class="main clearfix">
+      <div class="nl-form">
+        <button onclick="logar();" class="nl-submit" type="button">Cadastrar</button>
+      </div>
+
+      <form id="login" class="login cadastro" method="post" action="/Doacoes">
+        <div class="group">
+          <input name="quantidade" type="number" placeholder="Quantidade"/>
+          <span class="input-info">ml</span>
+        </div>
+
+        <select name="onde" class="menor">
+          <option value="1" selected>Instituição</option>
+           <option value="2">Hemosul</option>
+           <option value="3">Santa Casa</option>
+           <option value="4">Hospital Universitário</option>
+           <option value="5">Hospital Rosa Pedrossian</option>
+        </select>
+
+        <input type="checkbox" id="facebook" class="teste">
+        <label for="facebook" class="checklabel">Compartilhar no Facebook.</label>
+      </form>
+
+    </div>
+<% include footer %>
