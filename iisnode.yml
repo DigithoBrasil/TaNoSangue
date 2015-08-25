@@ -1,1 +1,3 @@
 nodeProcessCommandLine: "D:\Program Files (x86)\nodejs\0.10.32\node.exe"
+loggingEnabled: true
+devErrorsEnabled: true
