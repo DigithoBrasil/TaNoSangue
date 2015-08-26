@@ -83,8 +83,9 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-var server = app.listen(3000, function() {
-  var port = process.env.port || 3000;
+var porta = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000;
+var host = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 
-  console.log('Rodando na porta %s', port);
+var server = app.listen(porta, host, function () {
+  console.log('Aberto em %s:%s', host, porta);
 });
