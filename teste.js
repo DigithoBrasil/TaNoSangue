@@ -5,8 +5,8 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-var server = app.listen(3000, function () {
-  var port = process.env.port || 3000;
+var porta = process.env.port || 3000;
 
-  console.log('Aberto na porta %s', port);
+var server = app.listen(porta, function () {
+  console.log('Aberto na porta %s', porta);
 });
